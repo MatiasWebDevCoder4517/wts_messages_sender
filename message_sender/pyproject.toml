@@ -1,0 +1,39 @@
+[tool.autoflake]
+ignore-init-module-imports = true
+in-place = true
+recursive = true
+remove-all-unused-imports = true
+remove-unused-variables = true
+
+[tool.black]
+line-length = 100
+preview = true
+target-version = ['py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+extend_skip = [".md"]
+import_heading_firstparty = "Project"
+import_heading_localfolder = "Local"
+import_heading_stdlib = "Standard Library"
+import_heading_thirdparty = "External"
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+known_first_party = "cronjob_snapshot"
+line_length = 100
+lines_after_imports = 2
+multi_line_output = 3
+profile = "black"
+skip = [".git/", ".venv/", ".vscode/", "logs/", "__pycache__", "Dockerfile"]
