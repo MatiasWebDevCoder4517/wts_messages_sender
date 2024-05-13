@@ -1,0 +1,48 @@
+*.pyc
+*.logs
+*.log
+*.log.*
+*.drawio
+*.png
+*.sh
+*.xlsx
+.vscode
+.devcontainer
+*.logs
+*.log
+
+# Custom
+main_test.py
+execute_test.py
+pseudocode.py
+refactor.py
+
+# Logs
+logs/
+log/
+
+# Environments
+.env
+.env.*
+.venv
+env/
+logs/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# mypy
+.mypy_cache/
+
+# testing
+
+
+# Directories
+data_utils/
