@@ -11,3 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Adding base files
 - Adding pre-commit lib for clean code and auto-format.
+- Main script for sending whatsapp messages created.
